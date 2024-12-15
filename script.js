@@ -74,7 +74,7 @@ document.getElementById("btnProducto4").addEventListener("click",function(){
         let listaCarrito = document.getElementById("listaCarrito");
         let li = document.createElement("li");
         li.setAttribute("id","liPixel");
-        let txtLI = document.createTextNode("Google Pixel 8a< X" + cantPixel);
+        let txtLI = document.createTextNode("Google Pixel 8a X" + cantPixel);
         li.appendChild(txtLI);
         listaCarrito.appendChild(li);
     }
