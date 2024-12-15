@@ -23,7 +23,7 @@ document.getElementById("btnProducto1").addEventListener("click",function(){
     precioTotal += 170.99;
 
     let pPrecio = document.getElementById("pPrecio");
-    pPrecio.textContent = `Precio total: ${precioTotal}€`;
+    pPrecio.textContent = `Precio total: ${Math.round(precioTotal * 100) / 100}€`;
 })
 
 document.getElementById("btnProducto2").addEventListener("click",function(){
@@ -44,7 +44,7 @@ document.getElementById("btnProducto2").addEventListener("click",function(){
     precioTotal += 999.99;
 
     let pPrecio = document.getElementById("pPrecio");
-    pPrecio.textContent = `Precio total: ${precioTotal}€`;
+    pPrecio.textContent = `Precio total: ${Math.round(precioTotal * 100) / 100}€`;
 })
 
 document.getElementById("btnProducto3").addEventListener("click",function(){
@@ -65,7 +65,7 @@ document.getElementById("btnProducto3").addEventListener("click",function(){
     precioTotal += 1099.99;
 
     let pPrecio = document.getElementById("pPrecio");
-    pPrecio.textContent = `Precio total: ${precioTotal}€`;
+    pPrecio.textContent = `Precio total: ${Math.round(precioTotal * 100) / 100}€`;
 })
 
 document.getElementById("btnProducto4").addEventListener("click",function(){
@@ -86,7 +86,7 @@ document.getElementById("btnProducto4").addEventListener("click",function(){
     precioTotal += 499.99;
 
     let pPrecio = document.getElementById("pPrecio");
-    pPrecio.textContent = `Precio total: ${precioTotal}€`;
+    pPrecio.textContent = `Precio total: ${Math.round(precioTotal * 100) / 100}€`;
 })
 
 document.getElementById("btnProducto5").addEventListener("click",function(){
@@ -107,5 +107,5 @@ document.getElementById("btnProducto5").addEventListener("click",function(){
     precioTotal += 210.00;
 
     let pPrecio = document.getElementById("pPrecio");
-    pPrecio.textContent = `Precio total: ${precioTotal}€`;
+    pPrecio.textContent = `Precio total: ${Math.round(precioTotal * 100) / 100}€`;
 })
