@@ -226,6 +226,7 @@ document.getElementById("btnPagar").addEventListener("click",function(){
 
     let pPrecio = document.getElementById("pPrecio");
     pPrecio.textContent = `Precio total: 0€`;
+    precioTotal = 0;
 
     let listaCarrito = document.getElementById("listaCarrito");
     while (listaCarrito.firstChild) {
