@@ -100,6 +100,49 @@ body {
     color: #007BFF;
     margin: 0;
   }
+
+
+
+  /* CARRITO */
+#carrito {
+  border: 2px solid red;
+  position: fixed; /* Makes it stick to the bottom of the page */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Vertically center the content */
+  padding: 10px; /* Add some padding for spacing */
+  background-color: white; /* Optional: Make it stand out from the page */
+}
+
+/* Style for the left section (carro) */
+.carro {
+  border: 1px solid black;
+  padding: 10px;
+  flex: 1; /* Takes up remaining space */
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+}
+
+/* Style for the center section (productosCatalogo) */
+.productosCatalogo {
+  border: 1px solid black;
+  padding: 10px;
+  flex: 2; /* Takes up more space */
+  display: flex;
+  justify-content: center; /* Center content */
+}
+
+/* Style for the right section (precio) */
+.precio {
+  border: 1px solid black;
+  padding: 10px;
+  flex: 1; /* Takes up remaining space */
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+}
   
 /* Estilo responsivo para pantallas menores a 768px */
 @media (max-width: 768px) {
