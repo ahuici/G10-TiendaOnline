@@ -227,6 +227,11 @@ document.getElementById("btnPagar").addEventListener("click",function(){
     let pPrecio = document.getElementById("pPrecio");
     pPrecio.textContent = `Precio total: 0€`;
     precioTotal = 0;
+    cantMotorola = 0;
+    cantIphone = 0;
+    cantGalaxy = 0;
+    cantPixel = 0;
+    cantXP3 = 0;
 
     let listaCarrito = document.getElementById("listaCarrito");
     while (listaCarrito.firstChild) {
