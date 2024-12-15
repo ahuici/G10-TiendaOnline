@@ -41,3 +41,13 @@ function insertarDatos(nombre, imagen, precio){
 
     document.getElementById("catalogo").appendChild(div);
 }
+
+insertarDatos("Prueba 1", "images/iphone16.png","199.99");
+insertarDatos("Prueba 2", "images/galaxyzflip.png","299.99");
+insertarDatos("Prueba 3", "images/mtorola.jpg","399.99");
+insertarDatos("Prueba 4", "images/pixel8a.png","499.99");
+
+//eliminarDatos("Prueba1");
+//eliminarDatos("Prueba2");
+//eliminarDatos("Prueba3");
+//eliminarDatos("Prueba4");
