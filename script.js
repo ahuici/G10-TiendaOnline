@@ -109,3 +109,15 @@ document.getElementById("btnProducto5").addEventListener("click",function(){
     let pPrecio = document.getElementById("pPrecio");
     pPrecio.textContent = `Precio total: ${Math.round(precioTotal * 100) / 100}€`;
 })
+
+document.getElementById("btnPagar").addEventListener("click",function(){
+    window.alert("HAS PAGADO " + precioTotal + "€");
+
+    let pPrecio = document.getElementById("pPrecio");
+    pPrecio.textContent = `Precio total: 0€`;
+
+    let listaCarrito = document.getElementById("listaCarrito");
+    while (listaCarrito.firstChild) {
+        listaCarrito.removeChild(listaCarrito.firstChild);
+    }
+})
