@@ -111,7 +111,7 @@ document.getElementById("btnProducto5").addEventListener("click",function(){
 })
 
 document.getElementById("btnPagar").addEventListener("click",function(){
-    window.alert("HAS PAGADO " + precioTotal + "€");
+    window.alert("HAS PAGADO " + (Math.round(precioTotal * 100) / 100) + "€");
 
     let pPrecio = document.getElementById("pPrecio");
     pPrecio.textContent = `Precio total: 0€`;
