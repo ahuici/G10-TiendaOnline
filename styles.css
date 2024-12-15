@@ -7,33 +7,34 @@ body {
     background-color: #f4f4f9;
     color: #333;
     text-align: center;
-  }
-  
-  /* Header */
-  #title {
+    padding-bottom: 150px;
+}
+
+/* Header */
+#title {
     font-size: 2.5rem;
     color: #007BFF;
     margin: 20px 0;
-  }
-  
-  /* Background Image */
-  img[src="images/background.jpeg"] {
+}
+
+/* Background Image */
+img[src="images/background.jpeg"] {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
-  }
-  
-  /* Introductory Text */
-  p {
+}
+
+/* Introductory Text */
+p {
     margin: 20px;
     padding: 0 10px;
     font-size: 1rem;
     text-align: justify;
-  }
-  
-  /* Button */
-  #añadirCarrito {
+}
+
+/* Button */
+#añadirCarrito {
     padding: 10px 20px;
     background-color: #007BFF;
     color: #fff;
@@ -41,21 +42,21 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin: 20px 0;
-  }
-  
-  #añadirCarrito:hover {
+}
+
+#añadirCarrito:hover {
     background-color: #0056b3;
-  }
-  
-  /* Estilo para el catálogo de productos */
-  #catalogo {
+}
+
+/* Estilo para el catálogo de productos */
+#catalogo {
     display: flex;
     flex-direction: column; /* Organiza los productos en columna */
     gap: 20px; /* Espacio entre los productos */
     align-items: center; /* Centra los productos horizontalmente */
     padding: 20px;
-  }
-  
+}
+
 /* Estilo general para los productos */
 .producto {
     background: #fff;
@@ -72,18 +73,18 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
-  }
-  
-  /* Contenedor de botones */
-  .producto .botones {
+}
+
+/* Contenedor de botones */
+.producto .botones {
     display: flex;
     justify-content: space-between; /* Distribuye los botones entre los extremos */
     width: 100%; /* Asegura que ocupe todo el ancho */
     margin-top: 10px; /* Espacio entre el precio y los botones */
-  }
-  
-  /* Estilo para el botón de agregar */
-  .producto .btn {
+}
+
+/* Estilo para el botón de agregar */
+.producto .btn {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
@@ -92,10 +93,10 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  /* Estilo para el botón de eliminar */
-  .producto .btnEliminar {
+}
+
+/* Estilo para el botón de eliminar */
+.producto .btnEliminar {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
@@ -104,49 +105,63 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  /* Efecto hover para el botón de agregar */
-  .producto .btn:hover {
+}
+
+/* Efecto hover para el botón de agregar */
+.producto .btn:hover {
     background-color: #0056b3; /* Cambia a un tono más oscuro al pasar el cursor */
-  }
-  
-  /* Efecto hover para el botón de eliminar */
-  .producto .btnEliminar:hover {
+}
+
+/* Efecto hover para el botón de eliminar */
+.producto .btnEliminar:hover {
     background-color: #c82333; /* Rojo más oscuro */
-  }
-  
-  /* Imagen del producto */
-  .producto img {
+}
+
+/* Imagen del producto */
+.producto img {
     width: 200px;
     height: 200px;
     object-fit: contain;
     border-radius: 5px;
     margin-bottom: 20px;
     align-self: center; /* Centra la imagen horizontalmente */
-  }
-  
-  /* Nombre del producto */
-  .producto p:first-child {
+}
+
+/* Nombre del producto */
+.producto p:first-child {
     font-weight: bold;
     font-size: 1.2rem;
     margin: 0;
-  }
-  
-  /* Precio del producto */
-  .producto p:last-child {
+}
+
+/* Precio del producto */
+.producto p:last-child {
     position: absolute; /* Permite colocar el precio en una posición específica */
     bottom: 10px; /* Se sitúa cerca del borde inferior */
     right: 10px; /* Se sitúa cerca del borde derecho */
     font-size: 1.1rem;
     color: #007BFF;
     margin: 0;
-  }
+}
 
+/* Estilo para el botón de agregar al carrito */
+.btnAgregarCarrito {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff; /* Azul atractivo */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+/* Efecto hover para el botón de agregar al carrito */
+.btnAgregarCarrito:hover {
+    background-color: #0056b3; /* Cambia a un tono más oscuro al pasar el cursor */
+}
 
-  /* CARRITO */
-/* Estilo para la sección del carrito */
+/* CARRITO */
 /* Estilo para la sección del carrito */
 #carrito {
     position: fixed; /* Fija la sección al fondo de la página */
@@ -161,11 +176,10 @@ body {
     border-top: 2px solid #ddd; /* Borde superior sutil */
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
     border-radius: 20px 20px 0 0; /* Bordes redondeados en la parte superior */
-  }
-  
-  /* Estilo para el contenedor del icono de carrito */
-  
-  .carro {
+}
+
+/* Estilo para el contenedor del icono de carrito */
+.carro {
     padding: 10px;
     flex: 0.5; /* No ocupa todo el espacio, solo una parte */
     display: flex;
@@ -175,16 +189,16 @@ body {
     border-radius: 50%; /* Hace el contorno circular */
     border: 2px solid #ddd; /* Borde ligero */
     margin-right: 15px; /* Separación entre este y el siguiente div */
-  }
-  
-  /* Estilo para las imágenes dentro de .carro */
-  .carro img {
+}
+
+/* Estilo para las imágenes dentro de .carro */
+.carro img {
     width: 30px; /* Aumenta el tamaño del icono */
     height: 30px;
-  }
-  
-  /* Estilo para el contenedor del catálogo de productos */
-  .productosCatalogo {
+}
+
+/* Estilo para las imágenes dentro de .productosCatalogo */
+.productosCatalogo {
     flex: 3; /* Ocupa más espacio */
     padding: 10px;
     display: flex;
@@ -194,19 +208,19 @@ body {
     border-radius: 5px; /* Bordes redondeados */
     border: 2px solid #ddd;
     margin-right: 15px; /* Separación entre este y el siguiente div */
-  }
-  
-  /* Estilo para la lista de productos en el carrito */
-  #listaCarrito {
+}
+
+/* Estilo para la lista de productos en el carrito */
+#listaCarrito {
     list-style-type: none;
     padding: 0;
     margin: 0;
     text-align: center;
     font-size: 14px; /* Tamaño de texto más pequeño */
-  }
-  
-  /* Estilo para la sección de precio y botón */
-  .precio {
+}
+
+/* Estilo para la sección de precio y botón */
+.precio {
     flex: 1; /* Ocupa una cantidad equilibrada de espacio */
     padding: 10px;
     display: flex;
@@ -216,17 +230,17 @@ body {
     background-color: #fff;
     border-radius: 5px;
     border: 2px solid #ddd;
-  }
-  
-  /* Estilo para el texto del precio */
-  #pPrecio {
+}
+
+/* Estilo para el texto del precio */
+#pPrecio {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  /* Estilo para el botón de pagar */
-  #btnPagar {
+}
+
+/* Estilo para el botón de pagar */
+#btnPagar {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
@@ -235,44 +249,37 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  /* Efecto hover para el botón de pagar */
-  #btnPagar:hover {
+}
+
+/* Efecto hover para el botón de pagar */
+#btnPagar:hover {
     background-color: #0056b3; /* Cambia a un tono más oscuro al pasar el cursor */
-  }
-  
-  
-  
-  
-  
-  
+}
+
 /* Estilo responsivo para pantallas menores a 768px */
 @media (max-width: 768px) {
     .producto {
-      flex-direction: column; /* Cambia a disposición vertical */
-      text-align: center; /* Centra el texto e imagen */
-      align-items: center; /* Centra todos los elementos horizontalmente */
+        flex-direction: column; /* Cambia a disposición vertical */
+        text-align: center; /* Centra el texto e imagen */
+        align-items: center; /* Centra todos los elementos horizontalmente */
     }
-  
+
     .producto p:last-child {
         right: 0; /* Ajusta el margen en pantallas pequeñas */
         text-align: right; /* Alinea el precio a la derecha */
-      }
-  
+    }
+
     .producto img {
-      margin: 10px 0; /* Agrega espacio arriba y abajo de la imagen */
+        margin: 10px 0; /* Agrega espacio arriba y abajo de la imagen */
     }
-  }
-  
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     body {
-      padding: 0 10px; /* Reduce el margen general en móviles */
+        padding: 0 10px; /* Reduce el margen general en móviles */
     }
-  
+
     .producto {
-      padding: 15px; /* Ajusta el padding para dispositivos pequeños */
+        padding: 15px; /* Ajusta el padding para dispositivos pequeños */
     }
-  }
-  
+}
